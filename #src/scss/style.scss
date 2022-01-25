@@ -19,6 +19,143 @@
 @import '_forms';
 @import '_media';
 
+// header
+
+.header-top {
+  max-width: 1440px;
+  margin: 0 auto;
+  
+  height: 50px;
+  background-color: $headertop;
+
+  &__inner {
+    padding: 6px 50px 11px;    
+  }
+
+  &__menu {
+    display: flex;    
+    align-items: center;    
+  }
+
+  &__link {
+    color: $body;
+  }
+}
+
+.item-logo {
+ margin: 0 auto;
+}
+
+.item-lang {
+  position: relative;
+  margin-right: 25px;
+  padding-right: 12px;
+  &::after {
+    content: '';
+    position: absolute;
+    background-image: url(../img/icons/icons.svg#downarrow);
+    width: 8px;
+    height: 8px;
+    top: 6px;
+    right: 0;
+  }
+}
+
+.item-adress {
+  position: relative;
+  margin-right: 25px;
+  padding-left: 28px;
+
+  &::before {    
+    @include pseudo_header;
+    background-image: url(../img/icons/icons.svg#point);
+    background-repeat: no-repeat;  
+  }
+}
+
+.item-tel {
+  position: relative;  
+  padding-left: 28px;
+
+  &::before {
+    @include pseudo_header;
+    background-image: url(../img/icons/icons.svg#phone);
+    background-repeat: no-repeat;    
+  }
+}
+
+.item-search {
+  position: relative;
+  margin-right: 25px;
+  padding-left: 28px;
+
+  &::before {
+    @include pseudo_header;
+    background-image: url(../img/icons/icons.svg#search);
+    background-repeat: no-repeat;    
+  }
+}
+
+.item-login {
+  position: relative;
+  margin-right: 25px;
+  padding-left: 28px;
+
+  &::before {
+    @include pseudo_header;
+    background-image: url(../img/icons/icons.svg#user);
+    background-repeat: no-repeat;
+  }
+}
+
+.item-cart {
+  position: relative;
+  padding-left: 28px;
+
+  &::before {
+    @include pseudo_header;
+    background-image: url(../img/icons/icons.svg#cart);
+    background-repeat: no-repeat;
+  }
+
+  span {
+    position: absolute;
+    content: '';
+    width: 17px;
+    height: 17px;    
+    border-radius: 50%;
+    background-color: $red;
+    font-size: 12px;
+    line-height: 17px;    
+    text-align: center;
+    left: 7px;
+    top: 7px;
+  }
+}
+
+
+
+
+
+
+.header-bottom {
+
+  &__menu {}
+
+  &__item {}
+
+  &__link {}
+}
+
+.container {}
+
+.menu {}
+
+
+
+
+
+
 
 
 

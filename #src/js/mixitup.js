@@ -1,3 +1,3 @@
-$(function () {
-  var mixer = mixitup('.products__items');
-})
+// $(function () {
+//   var mixer = mixitup('.products__items');
+// })

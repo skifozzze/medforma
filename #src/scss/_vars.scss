@@ -1,5 +1,16 @@
 $body: #FFFFFF;
-$accent: #6B6867;
+$accent: #44424B;
+$headertop: #333152;
+$red: #EA4953;
+
+@mixin pseudo_header ($pos: absolute, $content: '', $width: 20px, $height: 20px, $top: 0, $left:0){
+  content: $content;
+  position: $pos;
+  width: $width;
+  height: $height;
+  top: $top;
+  left: $left;
+}
 
 
 
