@@ -21,11 +21,14 @@
 
 // header
 
-.header-top {
-  max-width: 1440px;
-  margin: 0 auto;
-  
-  height: 50px;
+.header {
+  &__inner {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+.header-top {  
   background-color: $headertop;
 
   &__inner {
@@ -133,23 +136,50 @@
   }
 }
 
-
-
-
-
-
 .header-bottom {
 
-  &__menu {}
+  &__inner {
+    padding: 25px 15px;
+    border-bottom: 1px solid $grey;
+  }
 
-  &__item {}
+  &__menu {
+    display: flex;
+    justify-content: center;
+  }
 
-  &__link {}
+  &__item {
+    &:not(:last-child){
+      margin-right: 45px;
+    }     
+  }
+  &__link {
+    text-transform: uppercase;
+    @extend %inter-500;
+    color: $title;
+    letter-spacing: 0.04em;
+  }
 }
 
-.container {}
+.item-clothing,
+.item-footwear {
+  position: relative;
+  padding-right: 13px;
+  &::after {
+    content: '';
+    position: absolute;
+    background-image: url(../img/icons/icons.svg#menuarrow);
+    width: 10px;
+    height: 10px;
+    top: 3px;
+    right: 0;
+  }  
+}
 
-.menu {}
+
+
+
+
 
 
 
