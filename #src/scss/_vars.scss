@@ -4,6 +4,8 @@ $headertop: #333152;
 $red: #EA4953;
 $title: #111111;
 $grey: #C4C4C4;
+$footerbg: #F6F6F7;
+$lightgrey: #88888F;
 
 @mixin pseudo_header ($pos: absolute, $content: '', $width: 20px, $height: 20px, $top: 0, $left:0){
   content: $content;

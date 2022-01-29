@@ -19,7 +19,6 @@
 @import '_forms';
 @import '_media';
 
-// header
 
 .header {
   &__inner {
@@ -42,6 +41,12 @@
 
   &__link {
     color: $body;
+    transition: all .3s;
+
+    &:hover {
+      text-decoration: underline;
+      text-shadow: 0 0.2px $body;
+    }
   }
 }
 
@@ -158,6 +163,11 @@
     @extend %inter-500;
     color: $title;
     letter-spacing: 0.04em;
+    transition: all .3s;
+    &:hover {
+      text-decoration: underline;
+      text-shadow: 0 0.2px $title;
+    }
   }
 }
 
@@ -172,8 +182,143 @@
     width: 10px;
     height: 10px;
     top: 3px;
-    right: 0;
+    right: 0;    
   }  
+}
+
+
+.footer {
+ background-color: $footerbg;
+
+  &__inner {
+    padding: 65px 0 35px;    
+  }
+}
+
+.footer-top {
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+  }
+
+  &__menu {
+    max-width: 230px;
+    &:not(:first-child){
+      margin-top: 9px;
+    }    
+  }
+  
+  &__box {
+    display: flex;
+  }
+
+  &__box-link {
+   margin-right: 9px; 
+    transition: all .3s;
+
+    &:hover {
+      margin-right: 6px;
+    }
+  }
+
+  &__box-img {    
+    width: 21px;
+    height: 21px;
+    transition: all .3s;
+    &:hover {
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  &__title {
+    @extend %inter-500;
+    font-size: 18px;
+    line-height: 1.45;
+    margin-bottom: 28px;
+  } 
+
+  &__item {
+    margin-bottom: 10px;
+  }
+
+  &__link,
+  &__adress,
+  &__tel {
+    line-height: 1.45;
+    color: $accent;     
+  }
+
+  &__link {
+    transition: all .3s;
+
+    &:hover {
+      text-decoration: underline;
+      text-shadow: 0 0.2px $accent;     
+    }
+  }
+
+  &__adress {
+    margin-bottom: 8px;
+  }
+
+  &__time {
+    font-size: 13px;
+    line-height: 1.45;
+    color: $lightgrey;
+    margin-bottom: 16px;
+  }
+
+  &__tel {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+  &__social {
+    display: flex;
+  }
+
+  &__social-link {
+    
+    margin-right: 10px;
+    transition: all .3s;
+    &:hover {
+      margin-right: 8px;
+    }
+  }
+
+  &__social-img {
+    width: 27px;
+    height: 27px;
+    transition: all .3s;
+    &:hover {
+      width: 29px;
+      height: 29px;
+    }
+  }
+}
+
+.logo-footer {
+  &__img {
+    margin-bottom: 28px;
+  }
+}
+
+.footer-bottom {
+  &__inner {
+    padding-top: 24px;
+    border-top: 1px solid $grey;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info,
+  &__copy {
+    font-size: 12px;
+    color: $lightgrey;
+  }
 }
 
 
