@@ -1,76 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="medical forms store">
-  <link rel="stylesheet" href="css/style.min.css">
-  <title>MED-FORMA</title>
-  <link rel="icon" href="img/favicon/favicon.svg">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-</head>
+@@include('./_head.html')
 
-<body id="home">
+<body>
 
-  <header class="header">
-
-  </header>
+  @@include('./_header.html')
 
   <main class="main">
-    <section class="home" id="collection">
-      <div class="home__inner">
-        <div class="home-left">
-          <div class="home-left__subtitle">
-            New Collection REKRJEIELK
-          </div>
-          <h2 class="home-left__title">
-            Find the new collection in this winter season.
-          </h2>
-          <p class="home-left__descr">
-            New season and new style only for you in our autumn collection. Fall in love with up to 70% off in Winter
-            collection.
-          </p>
-          <a class="home-left__link link" href="#">
-            Get Started
-          </a>
-        </div>
-        <div class="home-right">
-          <img class="home-right__img" src="img/shop.jpg" alt="Girls photo" width="565" height="575">
-          <div class="home-right__offer">
-            <p class="home-right__offer-text">
-              20 % OFF
-            </p>
-          </div>
-          <div class="home-right__delivery">
-            <p class="home-right__delivery-text">
-              Easy delivery
-            </p>
-          </div>
-          <div class="home-right__response">
-            <img class="home-right__response-img" src="img/customer1.png" alt="customer photo" width="60" height="60">
-            <div class="home-right__response-box">
-              <p class="home-right__response-title">
-                Haylie Baptista
-              </p>
-              <p class="home-right__response-subtitle">
-                Get product & Delivery
-              </p>
-              <div class="home-right__response-star" data-rateyo-rating="4.5"></div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
+    @@include('./_banners.html')
 
 
   </main>
 
-  <footer class="footer">
-
-  </footer>
+  @@include('./_footer.html')
 
   <script src="js/script.min.js"></script>
 </body>

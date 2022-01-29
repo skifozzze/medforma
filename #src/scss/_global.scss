@@ -6,11 +6,11 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  // background-color: $body;
-  // @extend %roboto-400;
-  // font-size: 18px;
-  // line-height: 1.5; 
-  // color: $accent;
+  background-color: $body;
+  @extend %inter-400;
+  font-size: 14px;
+  line-height: 1.2; 
+  color: $accent;
 }
 
 .main {
@@ -18,8 +18,8 @@ body {
 }
 
 .container {
-  // max-width: 1170px;
-  // margin: 0 auto;
-  // padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
