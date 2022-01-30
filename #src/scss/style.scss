@@ -325,35 +325,11 @@
     padding: 15px 0 40px;
   }
 
-  .slider {
-    position: relative;    
+  &__item-img {
+    object-fit: cover;
   }
 }
  
-// .slider-btn {
-//   position: absolute;
-//   border: 1.2px solid $grey;
-//   cursor: pointer;
-//   background-color: $body;
-//   width: 42px;
-//   height: 42px;
-//   border-radius: 50%;
-//   padding: 0;
-//   top: 45%;
-//   transition: all .3s;
-//   &:active {
-//     border: 1.2px solid $title;
-//   }
-
-//   &__next {
-//     right: -55px;    
-//   }
-
-//   &__prev {
-//     left: -55px;   
-//   }
-// }
-
 .slick-dots {
   display: flex;
   justify-content: center;
@@ -383,18 +359,12 @@
   &__inner {
     padding-bottom: 40px;
   }
-
-  &__slider-item {
-    
-
-  }
-
+ 
   &__item {
     position: relative;     
     max-width: 270px; 
     width: 100%;    
-    margin: auto;
-    
+    margin: auto;    
   }
 
   &__best,
@@ -417,6 +387,12 @@
     color: $body;
     background-color: $newbg;
     top: 38px;
+  }
+
+  &__discount {
+    top: 374px;
+    color: $body;
+    background-color: $discountbg;
   }
 
   &__img {
@@ -442,30 +418,8 @@
   &__price-old {
     margin-right: 10px;
   }
-
-  &__discount {
-    top: 374px;
-    color: $body;
-    background-color: $discountbg;
-  }
-
- 
-
-  &__price-new {}
+  
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
