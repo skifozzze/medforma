@@ -6,6 +6,11 @@ $title: #111111;
 $grey: #C4C4C4;
 $footerbg: #F6F6F7;
 $darkgrey: #88888F;
+$title: #111111;
+$bestbg: rgba(244, 244, 244, 0.9);
+$newbg: rgba(51, 49, 82, 0.9);
+$discountbg: rgba(234, 73, 83, 0.9);
+$price: #333152;
 
 @mixin pseudo_header ($pos: absolute, $content: '', $width: 20px, $height: 20px, $top: 0, $left:0){
   content: $content;

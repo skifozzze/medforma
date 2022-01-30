@@ -23,3 +23,73 @@ body {
   padding: 0 15px;
 }
 
+.title {
+  font-size: 30px;
+  line-height: 1.35;
+  color: $title;
+  margin-bottom: 40px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 59px;
+    height: 3px;
+    background-color: $red;
+    bottom: -5px;
+  }
+}
+
+.slider-btn {
+  position: absolute;
+  border: 1.2px solid $grey;
+  cursor: pointer;
+  background-color: $body;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  padding: 0;
+  top: 45%;
+  transition: all .3s;
+
+  &:active {
+    border: 1.2px solid $title;
+  }
+
+  &__next {
+    right: -55px;
+  }
+
+  &__prev {
+    left: -55px;
+  }
+}
+
+.price {
+  @extend %inter-700;
+  font-size: 16px;
+  line-height: 1.18;
+  color: $price;  
+}
+
+.price-old {
+  @extend %inter-400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-decoration: line-through;
+  color: $darkgrey;
+  margin: 0 5px;
+}
+
+.price-new {
+   @extend %inter-700;
+   font-size: 16px;
+   line-height: 1.18;
+   color: $red;
+}
+
+.article {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
