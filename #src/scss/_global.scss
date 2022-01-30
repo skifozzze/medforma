@@ -64,32 +64,79 @@ body {
   }
 }
 
-.price {
-  @extend %inter-700;
-  font-size: 16px;
-  line-height: 1.18;
+.price-now,
+.price-old,
+.price-new {
+font-size: 16px;
+line-height: 1.18;
+}
+
+
+.price-now {
+  @extend %inter-700;  
   color: $price;  
 }
 
 .price-old {
-  @extend %inter-400;
-  font-size: 16px;
-  line-height: 1.18;
+  @extend %inter-400;  
   text-decoration: line-through;
   color: $darkgrey;
-  margin: 0 5px;
+  margin-right: 10px;
 }
 
 .price-new {
-   @extend %inter-700;
-   font-size: 16px;
-   line-height: 1.18;
-   color: $red;
+  @extend %inter-700;  
+  color: $red;
 }
 
 .article {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  width: 100%;
+  
+  &__best,
+  &__new,
+  &__discount {
+    font-size: 12px;
+    line-height: 1.25;
+    padding: 4px 10px;
+    border-radius: 2px;
+    position: absolute;
+    left: 8px;
+  }
+
+  &__best {
+    background-color: $bestbg;
+    top: 9px;
+  }
+
+  &__new {
+    color: $body;
+    background-color: $newbg;
+    top: 38px;
+  }
+
+  &__discount {
+    top: 374px;
+    color: $body;
+    background-color: $discountbg;
+  }
+
+  &__img {
+    display: inline-block;
+    margin-bottom: 19px;
+  }
+
+  &__descr {
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
