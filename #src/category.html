@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Магазин по продаже медицинской формы">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>MED-FORMA</title>
+  <link rel="icon" href="img/favicon/favicon.svg">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+
+<body>
+
+  @@include('./_header.html')
+
+  <main class="main">
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="breadcrumbs__inner">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Главная
+              </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Каталог
+              </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Медицинские костюмы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <section class="shop">
+      <div class="container">
+        <div class="shop__inner">
+          <h2 class="shop__title title">
+            Костюмы
+          </h2>
+          <div class="shop__subtitle">
+            <h4 class="shop__subtitle-item">
+              Медицинские костюмы
+            </h4>
+            <h4 class="shop__subtitle-item">
+              Хирургические костюмы
+            </h4>
+          </div>
+          <div class="shop__filters filter">
+            <div class="filter__item filter-size">
+              <h3 class="filter__title">
+                <button class="filter__btn">
+                  Размер
+                </button>
+              </h3>
+              <form class="filter-size__form filter__form" action="#">
+                <label class="filter-size__label filter__label">
+                  <input class="filter-size__input filter__input" type="checkbox">
+                  <span class="filter-size__text filter__text">46</span>
+                </label>
+                <label class="filter-size__label filter__label">
+                  <input class="filter-size__input filter__input" type="checkbox">
+                  <span class="filter-size__text filter__text">50</span>
+                </label>
+                <label class="filter-size__label filter__label">
+                  <input class="filter-size__input filter__input" type="checkbox">
+                  <span class="filter-size__text filter__text">52</span>
+                </label>
+              </form>
+            </div>
+
+          </div>
+          <div class="shop__content"></div>
+
+        </div>
+      </div>
+    </section>
+
+    @@include('./_reviewed.html')
+
+
+  </main>
+
+  @@include('./_footer.html')
+
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

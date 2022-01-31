@@ -429,6 +429,7 @@
   &__inner {
     padding-bottom: 75px;
   } 
+
   &__item {
     position: relative;
     max-width: 270px;
@@ -498,6 +499,78 @@
   &__image {
     object-fit: cover;
   }
+}
+
+.reviewed {
+
+  .title {
+    margin-bottom: 25px;
+    &::before {
+      display: none;
+    }
+  }
+
+  &__inner {
+    padding: 50px 0 65px;
+  }    
+
+  &__item {
+    position: relative;
+    max-width: 270px;
+    margin: auto;
+  }  
+
+  &__photo {
+    object-fit: cover;
+  }  
+}
+
+.shop {
+
+  .title {
+    margin-bottom: 15px;
+    &::before {
+      display: none;
+    }
+  }
+
+  &__inner {}
+
+  &__title {}
+
+  &__subtitle {
+    display: flex;
+    margin-bottom: 35px;
+  }
+
+  &__subtitle-item {
+    margin-right: 25px;
+  }
+
+  &__filters {}
+
+  &__content {}
+}
+
+
+
+
+
+.filter-size {
+
+  &__form {
+    
+  }
+
+  &__label {}
+
+  &__box {}
+
+  &__input {}
+
+  &__checkbox {}
+
+  &__text {}
 }
 
 
