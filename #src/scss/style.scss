@@ -438,8 +438,68 @@
   &__photo {
     object-fit: cover;
   }
-
 }
+
+.contacts {
+
+  .title {
+    &::before {
+      display: none;
+    }
+  }
+
+  &__inner {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid $grey;
+  }
+
+  &__box {
+    padding-top: 65px;
+    max-width: 315px;
+  }  
+
+  &__adress {
+    font-size: 20px;
+    line-height: 1.45;
+    color: $title;
+    margin-bottom: 20px;
+  }
+
+  &__tel {
+    font-size: 18px;
+    line-height: 1.16;
+    color: $title;
+    margin-bottom: 25px;
+    display: inline-block;
+  }
+
+  &__time {
+    font-size: 18px;
+    line-height: 1.45;
+    color: $darkgrey;
+    margin-bottom: 60px;
+  }
+
+  &__link {
+    padding: 18px 39px;
+    border: 1px solid $red;
+    color: $red;
+    font-size: 15px;
+    line-height: 1.2;
+    transition: all .3s;
+    &:hover {
+      text-decoration: underline;
+      text-shadow: 0 0.2px $red;
+    }
+  }
+
+  &__image {
+    object-fit: cover;
+  }
+}
+
 
 
 	
