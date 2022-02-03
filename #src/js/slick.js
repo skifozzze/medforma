@@ -1,31 +1,38 @@
 $(function () {
-  $('.banners__slider').slick({
-    
+  
+  $('.banners__slider').slick({    
     dots: true,
     prevArrow: '<button class="slider-btn slider-btn__prev" aria-label="previous button"><svg width="12" height="12" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 13L0.999999 7L7 1" stroke="#44424B" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/></svg></button>',
     nextArrow: '<button class="slider-btn slider-btn__next" aria-label="previous button"><svg width="12" height="12" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L7 7L1 13" stroke="#44424B" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/></svg></button>',      
         
   });
-})
 
-$(function () {
   $('.top-sales__slider').slick({
-    slidesToShow: 4,    
-    // centerMode: true,
-    // variableWidth: true,
+    slidesToShow: 4,        
     prevArrow: '<button class="slider-btn slider-btn__prev" aria-label="previous button"><svg width="12" height="12" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 13L0.999999 7L7 1" stroke="#44424B" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/></svg></button>',
     nextArrow: '<button class="slider-btn slider-btn__next" aria-label="previous button"><svg width="12" height="12" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L7 7L1 13" stroke="#44424B" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/></svg></button>',      
         
   });
+
+
+  $('.new__slider').slick({
+    slidesToShow: 4,      
+    prevArrow: '<button class="slider-btn slider-btn__prev" aria-label="previous button"><svg width="12" height="12" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 13L0.999999 7L7 1" stroke="#44424B" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/></svg></button>',
+    nextArrow: '<button class="slider-btn slider-btn__next" aria-label="previous button"><svg width="12" height="12" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L7 7L1 13" stroke="#44424B" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/></svg></button>',      
+        
+  });
+
+
+  $('.reviewed__slider').slick({
+    slidesToShow: 4,  
+    prevArrow: '<button class="slider-btn slider-btn__prev" aria-label="previous button"><svg width="12" height="12" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 13L0.999999 7L7 1" stroke="#44424B" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/></svg></button>',
+    nextArrow: '<button class="slider-btn slider-btn__next" aria-label="previous button"><svg width="12" height="12" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L7 7L1 13" stroke="#44424B" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/></svg></button>',      
+        
+  });
+
+
 })
 
-$(function () {
-  $('.new__slider').slick({
-    slidesToShow: 4,    
-    // centerMode: true,
-    // variableWidth: true,
-    prevArrow: '<button class="slider-btn slider-btn__prev" aria-label="previous button"><svg width="12" height="12" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 13L0.999999 7L7 1" stroke="#44424B" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/></svg></button>',
-    nextArrow: '<button class="slider-btn slider-btn__next" aria-label="previous button"><svg width="12" height="12" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L7 7L1 13" stroke="#44424B" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round"/></svg></button>',      
-        
-  });
-})
+
+
+

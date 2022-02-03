@@ -185,7 +185,6 @@
   }  
 }
 
-
 .footer {
  background-color: $footerbg;
 
@@ -328,31 +327,7 @@
   &__item-img {
     object-fit: cover;
   }
-}
- 
-.slick-dots {
-  display: flex;
-  justify-content: center;
-  li {
-    margin: 0 7px;    
-  }
-  button {
-    cursor: pointer;
-    width: 8px;
-    height: 8px;
-    background-color: $grey;
-    border: none;
-    border-radius: 50%;
-    font-size: 0;  
-    padding: 0;    
-  }
-}
-
-.slick-active {
-  button {
-    background-color: $title;
-  }  
-}
+} 
 
 .top-sales {
 
@@ -360,10 +335,10 @@
     padding-bottom: 40px;
   }
  
-  &__item {
+  &__item {    
     position: relative;     
     max-width: 270px;      
-    margin: auto;    
+    margin: auto;     
   }
    
   &__photo {
@@ -400,13 +375,16 @@
   }
 
   &__item-title {
-    color: $title;
-    font-size: 20px;
     margin-bottom: 6px;
+  }
+
+  &__item-link {
+    color: $title;
+    font-size: 20px;    
     transition: all .3s;
     
     &:hover {
-      text-shadow: 0 0.3px $title;
+      text-shadow: 0 0.2px $title;
       text-decoration: underline;
     }    
   }
@@ -426,6 +404,7 @@
   &__inner {
     padding-bottom: 75px;
   } 
+
   &__item {
     position: relative;
     max-width: 270px;
@@ -435,8 +414,231 @@
   &__photo {
     object-fit: cover;
   }
-
 }
+
+.contacts {
+
+  .title {
+    &::before {
+      display: none;
+    }
+  }
+
+  &__inner {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid $grey;
+  }
+
+  &__box {
+    padding-top: 65px;
+    max-width: 315px;
+  }  
+
+  &__adress {
+    font-size: 20px;
+    line-height: 1.45;
+    color: $title;
+    margin-bottom: 20px;
+  }
+
+  &__tel {
+    font-size: 18px;
+    line-height: 1.16;
+    color: $title;
+    margin-bottom: 25px;
+    display: inline-block;
+  }
+
+  &__time {
+    font-size: 18px;
+    line-height: 1.45;
+    color: $darkgrey;
+    margin-bottom: 60px;
+  }
+
+  &__link {
+    padding: 18px 39px;
+    border: 1px solid $red;
+    color: $red;
+    font-size: 15px;
+    line-height: 1.2;
+    transition: all .3s;
+    &:hover {
+      text-decoration: underline;
+      text-shadow: 0 0.2px $red;
+    }
+  }
+
+  &__image {
+    object-fit: cover;
+  }
+}
+
+.reviewed {
+
+  .title {
+    margin-bottom: 25px;
+    &::before {
+      display: none;
+    }
+  }
+
+  &__inner {
+    padding-bottom: 65px;
+  }    
+
+  &__item {
+    position: relative;
+    max-width: 270px;
+    margin: auto;
+  }  
+
+  &__photo {
+    object-fit: cover;
+  }  
+}
+
+.shop {
+
+  .title {
+    margin-bottom: 15px;
+    &::before {
+      display: none;
+    }
+  }
+
+  &__inner {
+    padding: 15px 0 50px;
+  }
+
+  &__subtitle {
+    display: flex;
+    margin-bottom: 35px;
+  }
+
+  &__subtitle-item {
+    margin-right: 25px;
+  }
+
+  &__filters {
+    display: flex;
+  }
+
+  &__content {
+    margin-bottom: 48px;
+  }
+  
+  &__content-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 48px 30px;   
+  }
+
+  &__content-item {
+    position: relative;
+  }
+ 
+  &__content-photo {
+    object-fit: cover;
+  }
+
+  &__content-link {
+    color: $accent;
+  }
+
+  &__btn {
+    margin: auto;
+    display: block;
+    padding: 18px 60px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: $price;
+    @extend %inter-500;
+    letter-spacing: 0.04em;
+    color: $body;
+  }
+}
+
+.filter-size {
+  &__form {
+    &.filter-size__form--active {
+     transform: translateY(0);
+    }
+  }
+  &__btn {
+    &.filter-size__btn--active {
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}  
+
+.filter-color {
+  &__form {
+    &.filter-color__form--active {
+      transform: translateY(0);
+    }
+  }
+  &__btn {
+    &.filter-color__btn--active {
+      &::after {
+        transform: rotate(180deg);
+      }    
+    }
+  }
+}
+
+.filter-price {
+  &__form {
+    &.filter-price__form--active {
+      transform: translateY(0);
+    }
+  }
+  &__btn {
+    &.filter-price__btn--active {
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.filter-gender {
+  &__form {
+    &.filter-gender__form--active {
+      transform: translateY(0);      
+    }
+  }
+  &__btn {
+    &.filter-gender__btn--active {
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.filter-sort {
+  &__form {
+    &.filter-sort__form--active {
+      transform: translateY(0);
+    }
+  }
+  &__btn {
+    &.filter-sort__btn--active {
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+
+
 
 
 	
