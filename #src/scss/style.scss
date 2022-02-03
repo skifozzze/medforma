@@ -185,7 +185,6 @@
   }  
 }
 
-
 .footer {
  background-color: $footerbg;
 
@@ -328,31 +327,7 @@
   &__item-img {
     object-fit: cover;
   }
-}
- 
-.slick-dots {
-  display: flex;
-  justify-content: center;
-  li {
-    margin: 0 7px;    
-  }
-  button {
-    cursor: pointer;
-    width: 8px;
-    height: 8px;
-    background-color: $grey;
-    border: none;
-    border-radius: 50%;
-    font-size: 0;  
-    padding: 0;    
-  }
-}
-
-.slick-active {
-  button {
-    background-color: $title;
-  }  
-}
+} 
 
 .top-sales {
 
@@ -360,10 +335,10 @@
     padding-bottom: 40px;
   }
  
-  &__item {
+  &__item {    
     position: relative;     
     max-width: 270px;      
-    margin: auto;    
+    margin: auto;     
   }
    
   &__photo {
@@ -511,7 +486,7 @@
   }
 
   &__inner {
-    padding: 50px 0 65px;
+    padding-bottom: 65px;
   }    
 
   &__item {
@@ -534,9 +509,9 @@
     }
   }
 
-  &__inner {}
-
-  &__title {}
+  &__inner {
+    padding: 15px 0 50px;
+  }
 
   &__subtitle {
     display: flex;
@@ -547,31 +522,122 @@
     margin-right: 25px;
   }
 
-  &__filters {}
-
-  &__content {}
-}
-
-
-
-
-
-.filter-size {
-
-  &__form {
-    
+  &__filters {
+    display: flex;
   }
 
-  &__label {}
+  &__content {
+    margin-bottom: 48px;
+  }
+  
+  &__content-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 48px 30px;   
+  }
 
-  &__box {}
+  &__content-item {
+    position: relative;
+  }
+ 
+  &__content-photo {
+    object-fit: cover;
+  }
 
-  &__input {}
+  &__content-link {
+    color: $accent;
+  }
 
-  &__checkbox {}
-
-  &__text {}
+  &__btn {
+    margin: auto;
+    display: block;
+    padding: 18px 60px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: $price;
+    @extend %inter-500;
+    letter-spacing: 0.04em;
+    color: $body;
+  }
 }
+
+.filter-size {
+  &__form {
+    &.filter-size__form--active {
+     transform: translateY(0);
+    }
+  }
+  &__btn {
+    &.filter-size__btn--active {
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}  
+
+.filter-color {
+  &__form {
+    &.filter-color__form--active {
+      transform: translateY(0);
+    }
+  }
+  &__btn {
+    &.filter-color__btn--active {
+      &::after {
+        transform: rotate(180deg);
+      }    
+    }
+  }
+}
+
+.filter-price {
+  &__form {
+    &.filter-price__form--active {
+      transform: translateY(0);
+    }
+  }
+  &__btn {
+    &.filter-price__btn--active {
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.filter-gender {
+  &__form {
+    &.filter-gender__form--active {
+      transform: translateY(0);      
+    }
+  }
+  &__btn {
+    &.filter-gender__btn--active {
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.filter-sort {
+  &__form {
+    &.filter-sort__form--active {
+      transform: translateY(0);
+    }
+  }
+  &__btn {
+    &.filter-sort__btn--active {
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+
 
 
 
