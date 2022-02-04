@@ -23,6 +23,5 @@ $(function () {
   $('.filter-sort__btn').on('click', function () {    
     $('.filter-sort__btn').toggleClass('filter-sort__btn--active');   
     $('.filter-sort__form').toggleClass('filter-sort__form--active');
-  })
-
+  }) 
 })

@@ -469,7 +469,7 @@
     transition: all .3s;
     &:hover {
       text-decoration: underline;
-      text-shadow: 0 0.2px $red;
+      text-shadow: 0 0.1px $red;
     }
   }
 
@@ -564,6 +564,9 @@
     letter-spacing: 0.04em;
     color: $body;
     margin-bottom: 38px;
+    &:active {
+      background-color: $darkgrey;
+    }
   }
 }
 
