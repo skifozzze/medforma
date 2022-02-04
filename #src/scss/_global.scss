@@ -17,6 +17,10 @@ body {
   flex-grow: 1;
 }
 
+button {
+  cursor: pointer;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -41,8 +45,7 @@ body {
 
 .slider-btn {
   position: absolute;
-  border: 1.2px solid $grey;
-  cursor: pointer;
+  border: 1.2px solid $grey;  
   background-color: $body;
   width: 42px;
   height: 42px;
@@ -72,8 +75,7 @@ body {
     margin: 0 7px;
   }
 
-  button {
-    cursor: pointer;
+  button {    
     width: 8px;
     height: 8px;
     background-color: $grey;
@@ -212,7 +214,6 @@ body {
 
 .filter {    
 
-  margin-bottom: -255px;
   position: relative;
 
   &__item {
@@ -277,8 +278,7 @@ body {
     }
   }
 
-  &__btn {    
-    cursor: pointer;
+  &__btn {        
     text-transform: uppercase;
     font-size: 14px;
     line-height: 1.35;
@@ -301,6 +301,10 @@ body {
       top: 4px;
     }  
   }
+}
+
+.pagination {
+  
 }
 
   

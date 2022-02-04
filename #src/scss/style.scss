@@ -375,6 +375,8 @@
   }
 
   &__item-title {
+    font-size: 20px;
+    line-height: 1.2;
     margin-bottom: 6px;
   }
 
@@ -523,17 +525,20 @@
   }
 
   &__filters {
+    margin-bottom: -255px;
     display: flex;
   }
 
   &__content {
-    margin-bottom: 48px;
+    .shop__content-items {
+      margin-bottom: 48px;
+    }    
   }
   
   &__content-items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 48px 30px;   
+    grid-gap: 48px 30px;          
   }
 
   &__content-item {
@@ -553,89 +558,70 @@
     display: block;
     padding: 18px 60px;
     border: none;
-    text-transform: uppercase;
-    cursor: pointer;
+    text-transform: uppercase;    
     background-color: $price;
     @extend %inter-500;
     letter-spacing: 0.04em;
     color: $body;
+    margin-bottom: 38px;
   }
 }
 
 .filter-size {
-  &__form {
-    &.filter-size__form--active {
-     transform: translateY(0);
-    }
+  &__form--active {
+    transform: translateY(0);
   }
-  &__btn {
-    &.filter-size__btn--active {
-      &::after {
-        transform: rotate(180deg);
-      }
+  &__btn--active {
+    &::after {
+      transform: rotate(180deg);
     }
-  }
+  }  
 }  
 
 .filter-color {
-  &__form {
-    &.filter-color__form--active {
-      transform: translateY(0);
-    }
-  }
-  &__btn {
-    &.filter-color__btn--active {
-      &::after {
-        transform: rotate(180deg);
-      }    
-    }
+  &__form--active {
+    transform: translateY(0);
+  }  
+  &__btn--active {
+    &::after {
+      transform: rotate(180deg);
+    } 
   }
 }
 
 .filter-price {
-  &__form {
-    &.filter-price__form--active {
-      transform: translateY(0);
-    }
+  &__form--active {    
+    transform: translateY(0);  
   }
-  &__btn {
-    &.filter-price__btn--active {
-      &::after {
-        transform: rotate(180deg);
-      }
+  &__btn--active {
+    &::after {
+    transform: rotate(180deg);
     }
   }
 }
 
 .filter-gender {
-  &__form {
-    &.filter-gender__form--active {
-      transform: translateY(0);      
-    }
-  }
-  &__btn {
-    &.filter-gender__btn--active {
-      &::after {
-        transform: rotate(180deg);
-      }
+  &__form--active {
+    transform: translateY(0);      
+  }  
+  &__btn--active {    
+    &::after {
+      transform: rotate(180deg);
     }
   }
 }
 
 .filter-sort {
-  &__form {
-    &.filter-sort__form--active {
-      transform: translateY(0);
-    }
+  &__form--active {    
+    transform: translateY(0);
   }
-  &__btn {
-    &.filter-sort__btn--active {
-      &::after {
-        transform: rotate(180deg);
-      }
-    }
+  &__btn--active {
+    &::after {
+      transform: rotate(180deg);
+    }    
   }
 }
+
 
 
 
