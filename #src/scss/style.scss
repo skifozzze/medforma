@@ -375,6 +375,8 @@
   }
 
   &__item-title {
+    font-size: 20px;
+    line-height: 1.2;
     margin-bottom: 6px;
   }
 
@@ -467,7 +469,7 @@
     transition: all .3s;
     &:hover {
       text-decoration: underline;
-      text-shadow: 0 0.2px $red;
+      text-shadow: 0 0.1px $red;
     }
   }
 
@@ -523,17 +525,20 @@
   }
 
   &__filters {
+    margin-bottom: -255px;
     display: flex;
   }
 
   &__content {
-    margin-bottom: 48px;
+    .shop__content-items {
+      margin-bottom: 48px;
+    }    
   }
   
   &__content-items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 48px 30px;   
+    grid-gap: 48px 30px;          
   }
 
   &__content-item {
@@ -553,89 +558,124 @@
     display: block;
     padding: 18px 60px;
     border: none;
-    text-transform: uppercase;
-    cursor: pointer;
+    text-transform: uppercase;    
     background-color: $price;
     @extend %inter-500;
     letter-spacing: 0.04em;
     color: $body;
+    margin-bottom: 38px;
+    &:active {
+      background-color: $darkgrey;
+    }
   }
 }
 
 .filter-size {
-  &__form {
-    &.filter-size__form--active {
-     transform: translateY(0);
-    }
+  &__form--active {
+    transform: translateY(0);
   }
-  &__btn {
-    &.filter-size__btn--active {
-      &::after {
-        transform: rotate(180deg);
-      }
+  &__btn--active {
+    &::after {
+      transform: rotate(180deg);
     }
-  }
+  }  
 }  
 
 .filter-color {
-  &__form {
-    &.filter-color__form--active {
-      transform: translateY(0);
-    }
-  }
-  &__btn {
-    &.filter-color__btn--active {
-      &::after {
-        transform: rotate(180deg);
-      }    
-    }
+  &__form--active {
+    transform: translateY(0);
+  }  
+  &__btn--active {
+    &::after {
+      transform: rotate(180deg);
+    } 
   }
 }
 
 .filter-price {
-  &__form {
-    &.filter-price__form--active {
-      transform: translateY(0);
-    }
+  &__form--active {    
+    transform: translateY(0);  
   }
-  &__btn {
-    &.filter-price__btn--active {
-      &::after {
-        transform: rotate(180deg);
-      }
+  &__btn--active {
+    &::after {
+    transform: rotate(180deg);
     }
   }
 }
 
 .filter-gender {
-  &__form {
-    &.filter-gender__form--active {
-      transform: translateY(0);      
-    }
-  }
-  &__btn {
-    &.filter-gender__btn--active {
-      &::after {
-        transform: rotate(180deg);
-      }
+  &__form--active {
+    transform: translateY(0);      
+  }  
+  &__btn--active {    
+    &::after {
+      transform: rotate(180deg);
     }
   }
 }
 
 .filter-sort {
-  &__form {
-    &.filter-sort__form--active {
-      transform: translateY(0);
-    }
-  }
-  &__btn {
-    &.filter-sort__btn--active {
-      &::after {
-        transform: rotate(180deg);
-      }
-    }
+  display: flex;  
+  background-color: $body;
+  
+ &__title {
+   text-transform: uppercase;
+   font-size: 14px;
+   line-height: 1.35;
+   letter-spacing: 0.04em;   }
+}
+
+.jq-selectbox__select {  
+  border: none;
+  @extend %inter-400;
+  font-size: 13px;
+  line-height: 16px;
+  height: 16px;
+  box-shadow: none;
+  text-shadow: none;
+  background: $body;
+  padding: 0 10px;
+  width: 110px;
+  &:hover {
+    background: $body;
+    border: none;
   }
 }
+
+.jq-selectbox__trigger {  
+  border-left: none;
+  background-image: url('../img/icons/icons.svg#menuarrow');
+  width: 10px;
+  height: 10px;
+  top: 4px;
+  background-repeat: no-repeat;
+}
+
+.jq-selectbox__trigger-arrow {  
+  display: none;
+}
+
+.jq-selectbox__dropdown {  
+  margin: 0;
+  @extend %inter-400;
+  font-size: 13px;
+  line-height: 16px;
+  border: none;
+  top: 0;
+  border-radius: 0;
+}
+
+.jq-selectbox.focused .jq-selectbox__select {
+  border: 1px solid transparent;
+}
+
+.jq-selectbox li {
+  &:hover {
+   background-color: $price;
+  }
+}
+
+
 
 
 
