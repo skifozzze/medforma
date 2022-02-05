@@ -174,7 +174,7 @@
 .item-footwear {
   position: relative;
   padding-right: 13px;
-  &::after {
+  &::before {
     content: '';
     position: absolute;
     background-image: url(../img/icons/icons.svg#menuarrow);
@@ -478,7 +478,8 @@
   }
 }
 
-.reviewed {
+.reviewed,
+.recomended {
 
   .title {
     margin-bottom: 25px;

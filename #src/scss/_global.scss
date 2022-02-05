@@ -239,13 +239,8 @@ button {
   }
   
   &__text {
-    line-height: 2.35;    
-    margin-left: 35px;
-  }
-
-  &__box {
-    position: relative;
-  }
+    line-height: 2.35;        
+  } 
 
   &__input {    
     width: 1px;
@@ -263,11 +258,9 @@ button {
 
   &__checkbox {
     width: 20px;
-    height: 20px;
-    position: absolute;
-    border: 1px solid $darkgrey;
-    left: 0;
-    top: -10px;    
+    height: 20px;    
+    border: 1px solid $darkgrey;    
+    margin-right: 14px;          
   }
   
   &__label {
@@ -327,7 +320,7 @@ button {
     border: 1px solid transparent;
     border-radius: 50%;
     &--active {
-        border: 1px solid $darkgrey;
+      border: 1px solid $darkgrey;
     }
   }
 }
