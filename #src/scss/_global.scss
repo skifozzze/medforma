@@ -212,7 +212,7 @@ button {
   }
 }
 
-.filter {    
+.filter {      
 
   position: relative;
 
@@ -224,7 +224,7 @@ button {
 
     &:last-child {
       margin-left: auto;
-    }
+    }   
   }
       
   &__form {
@@ -235,6 +235,7 @@ button {
     transform: translateY(-500%);   
     z-index: 10;
     position: relative;
+    
   }
   
   &__text {

@@ -615,15 +615,66 @@
 }
 
 .filter-sort {
-  &__form--active {    
-    transform: translateY(0);
-  }
-  &__btn--active {
-    &::after {
-      transform: rotate(180deg);
-    }    
+  display: flex;  
+  background-color: $body;
+  
+ &__title {
+   text-transform: uppercase;
+   font-size: 14px;
+   line-height: 1.35;
+   letter-spacing: 0.04em;   }
+}
+
+.jq-selectbox__select {  
+  border: none;
+  @extend %inter-400;
+  font-size: 13px;
+  line-height: 16px;
+  height: 16px;
+  box-shadow: none;
+  text-shadow: none;
+  background: $body;
+  padding: 0 10px;
+  width: 110px;
+  &:hover {
+    background: $body;
+    border: none;
   }
 }
+
+.jq-selectbox__trigger {  
+  border-left: none;
+  background-image: url('../img/icons/icons.svg#menuarrow');
+  width: 10px;
+  height: 10px;
+  top: 4px;
+  background-repeat: no-repeat;
+}
+
+.jq-selectbox__trigger-arrow {  
+  display: none;
+}
+
+.jq-selectbox__dropdown {  
+  margin: 0;
+  @extend %inter-400;
+  font-size: 13px;
+  line-height: 16px;
+  border: none;
+  top: 0;
+  border-radius: 0;
+}
+
+.jq-selectbox.focused .jq-selectbox__select {
+  border: 1px solid transparent;
+}
+
+.jq-selectbox li {
+  &:hover {
+   background-color: $price;
+  }
+}
+
 
 
 
