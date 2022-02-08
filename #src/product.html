@@ -18,8 +18,66 @@
 
   <main class="main">
     @@include('./_breadcrumbs.html')
-    @@include('./_recomended.html')
 
+    <section class="products">
+      <div class="products__inner">
+        <div class="products__slider">
+          <img class="products__slider-img" src="img/goods/14.jpg" alt="Костюм" width="468" height="702">
+          <img class="products__slider-img" src="img/goods/15.jpg" alt="Костюм" width="468" height="702">
+          <img class="products__slider-img" src="img/goods/14.jpg" alt="Костюм" width="468" height="702">
+          <img class="products__slider-img" src="img/goods/15.jpg" alt="Костюм" width="468" height="702">
+        </div>
+
+        <div class="products__info">
+          <h3 class="products__info-title">
+            Женский медицинский костюм
+          </h3>
+          <p class="products__info-article">
+            Артикул: WS11
+          </p>
+          <div class="products__info-price article__price">
+            <p class="products__price-new price-new">
+              900 грн
+            </p>
+            <p class="products__price-old price-old">
+              1000 грн
+            </p>
+          </div>
+
+          <div class="products__filter-color products-color">
+            <form class="products-color__form" action="#">
+              <label class="products-color__label">
+                <input class="products-color__input" type="radio" name="radio" value="blue" checked>
+                <span class="products-color__check products-color__check-blue"></span>
+              </label class="products-color__label">
+              <label>
+                <input class="products-color__input" type="radio" name="radio" value="grey">
+                <span class="products-color__check products-color__check-grey"></span>
+              </label>
+            </form>
+            <p class="products-color__text">
+              Цвет: Голубой
+            </p>
+          </div>
+
+          <a class="products__info-ruler" href="#">
+            Размерная сетка
+          </a>
+          <div class="products__info-ruler__box filter-ruler">
+            *****************
+          </div>
+          <button class="products__btn" type="submit">
+            Добавить в корзину
+          </button>
+          <div class="products__accordion">
+            *******
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    @@include('./_recomended.html')
 
     @@include('./_reviewed.html')
   </main>

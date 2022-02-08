@@ -26,6 +26,8 @@ $(function () {
   }) 
 
   $('.filter-select').styler();
+
+
   
 
 })
