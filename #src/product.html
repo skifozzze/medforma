@@ -36,22 +36,22 @@
             Артикул: WS11
           </p>
           <div class="products__info-price article__price">
-            <p class="products__price-new price-new">
+            <p class="price-new">
               900 грн
             </p>
-            <p class="products__price-old price-old">
+            <p class="price-old">
               1000 грн
             </p>
           </div>
-
           <div class="products__filter-color products-color">
             <form class="products-color__form" action="#">
               <label class="products-color__label">
-                <input class="products-color__input" type="radio" name="radio" value="blue" checked>
+                <input class="products-color__input" type="radio" name="radio" value="blue" aria-label="Голубой цвет"
+                  checked>
                 <span class="products-color__check products-color__check-blue"></span>
-              </label class="products-color__label">
-              <label>
-                <input class="products-color__input" type="radio" name="radio" value="grey">
+              </label>
+              <label class="products-color__label">
+                <input class="products-color__input" type="radio" name="radio" value="grey" aria-label="Серый цвет">
                 <span class="products-color__check products-color__check-grey"></span>
               </label>
             </form>
@@ -59,14 +59,21 @@
               Цвет: Голубой
             </p>
           </div>
-
           <a class="products__info-ruler" href="#">
             Размерная сетка
           </a>
           <div class="products__info-ruler__box filter-ruler">
-            *****************
+            <form class="filter-ruler__form" action="#">
+              <select class="filter-ruler__select">
+                <option value="">Выберите размер</option>
+                <option value="">44</option>
+                <option value="">46</option>
+                <option value="">48</option>
+              </select>
+            </form>
           </div>
-          <button class="products__btn" type="submit">
+
+          <button class="products__btn button" type="submit">
             Добавить в корзину
           </button>
           <div class="products__accordion">

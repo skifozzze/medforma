@@ -25,7 +25,7 @@ $(function () {
     $('.filter-sort__form').toggleClass('filter-sort__form--active');
   }) 
 
-  $('.filter-select').styler();
+  $('.filter-select, .filter-ruler__select').styler();
 
 
   

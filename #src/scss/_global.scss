@@ -43,6 +43,27 @@ button {
   }
 }
 
+.button {
+  margin: auto;
+  display: block;
+  padding: 18px 60px;
+  border: none;
+  text-transform: uppercase;
+  background-color: $price;
+  @extend %inter-500;
+  letter-spacing: 0.04em;
+  color: $body;
+  transition: all .5s; 
+
+  &:hover {
+    background-color: $darkgrey;
+  }
+
+  &:active {
+    background-color: $red;
+  }
+}
+
 .slider-btn {
   position: absolute;
   border: 1.2px solid $grey;  
