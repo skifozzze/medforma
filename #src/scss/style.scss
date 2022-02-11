@@ -559,64 +559,6 @@
   }
 }
 
-.filter-size {
-  &__form--active {
-    transform: translateY(0);
-  }
-  &__btn--active {
-    &::after {
-      transform: rotate(180deg);
-    }
-  }  
-}  
-
-.filter-color {
-  &__form--active {
-    transform: translateY(0);
-  }  
-  &__btn--active {
-    &::after {
-      transform: rotate(180deg);
-    } 
-  }
-}
-
-.filter-price {
-  &__form--active {    
-    transform: translateY(0);  
-  }
-  &__btn--active {
-    &::after {
-    transform: rotate(180deg);
-    }
-  }
-}
-
-.filter-gender {
-  &__form--active {
-    transform: translateY(0);      
-  }  
-  &__btn--active {    
-    &::after {
-      transform: rotate(180deg);
-    }
-  }
-}
-
-.filter-sort {
-  display: flex;  
-  background-color: $body;
-  
- &__title {
-   text-transform: uppercase;
-   font-size: 14px;
-   line-height: 1.35;
-   letter-spacing: 0.04em;   
-   margin-right: 5px;
-  }
-}
-
-
 .jq-selectbox__select {  
   border: none;
   @extend %inter-400;
@@ -765,9 +707,51 @@
   }
 
   &__btn {
+    max-width: 370px;
     width: 100%;
     margin-bottom: 70px;
+  }  
+
+  &__accordion-items {
+    max-width: 370px;
   }
+
+  &__accordion-item {
+    padding: 0 5px;
+    border-bottom: 1px solid $grey;
+    &:first-child {
+      border-top: 1px solid $grey;
+    }
+  }
+
+  &__accordion-title {
+    @extend %inter-500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;     
+    padding: 20px 0;
+    position: relative;
+    cursor: pointer;
+    &::after {
+      content: '+';
+      position: absolute;
+      right: 0;
+      top: 20px;
+    }
+  }
+
+  &__accordion-text {
+    margin-bottom: 15px;
+    display: none;
+  }
+
+  &__accordion-item--active {
+    .products__accordion-text {
+      display: block;
+    }
+  }
+
 }
 
 
