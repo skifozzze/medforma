@@ -11,9 +11,8 @@ $bestbg: rgba(244, 244, 244, 0.9);
 $newbg: rgba(51, 49, 82, 0.9);
 $discountbg: rgba(234, 73, 83, 0.9);
 $price: #333152;
+$shadow: rgba(39, 39, 39, 0.4);
 
-$color1: #f4f4f4;
-$color2: #3197EE;
 
 @mixin pseudo_header ($pos: absolute, $content: '', $width: 20px, $height: 20px, $top: 0, $left:0){
   content: $content;
@@ -23,8 +22,6 @@ $color2: #3197EE;
   top: $top;
   left: $left;
 }
-
-
 
 $sm: 576px;
 $md: 768px;

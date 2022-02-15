@@ -733,6 +733,10 @@
     padding: 20px 0;
     position: relative;
     cursor: pointer;
+    transition: all .3s;
+    &:hover {
+      color: $darkgrey;
+    }
     &::after {
       content: '+';
       position: absolute;
@@ -749,6 +753,12 @@
   &__accordion-item--active {
     .products__accordion-text {
       display: block;
+    }
+    .products__accordion-title {
+      text-decoration: underline;
+      &::after {
+        content: '-';
+      }
     }
   }
 
@@ -837,6 +847,8 @@
   }
 
 }
+
+
 
 
 
