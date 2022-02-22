@@ -35,22 +35,31 @@
 
   &__menu {
     display: flex;    
-    align-items: center;    
+    align-items: center; 
+    justify-content: space-between;   
   }
 
   &__link {
     color: $body;
-    transition: all .3s;
+    transition: all .3s;   
 
     &:hover {
       text-decoration: underline;
       text-shadow: 0 0.2px $body;
     }
   }
+
+  &__btn {    
+    display: none;   
+  }
+
+
 }
 
-.item-logo {
- margin: 0 auto;
+.menu-info,
+.menu-site {
+  display: flex;
+  justify-content: space-between;
 }
 
 .item-lang {
