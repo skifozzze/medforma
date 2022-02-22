@@ -1,0 +1,209 @@
+  <section class="checkout">
+    <div class="container">
+      <div class="checkout__inner">
+        <div class="checkout__forms">
+          <h3 class="checkout__title">
+            Оформление заказа
+          </h3>
+          <div class="checkout__forms-item checkout-buyer">
+            <h4 class="checkout__forms-title">
+              <span class="checkout__forms-span">1</span>
+              Покупатель
+            </h4>
+            <a class="checkout__forms-enter" href="#">
+              Войти
+            </a>
+            <form class="checkout__forms-form" action="#">
+              <label class="checkout__forms-label">
+                Имя
+                <input class="checkout__forms-input" type="text" placeholder="Александра" required>
+              </label>
+            </form>
+            <form class="checkout__forms-form" action="#">
+              <label class="checkout__forms-label">
+                Фамилия
+                <input class="checkout__forms-input" type="text">
+              </label>
+            </form>
+            <form class="checkout__forms-form" action="#">
+              <label class="checkout__forms-label">
+                Email
+                <input class="checkout__forms-input" type="email" required>
+              </label>
+            </form>
+            <form class="checkout__forms-form" action="#">
+              <label class="checkout__forms-label">
+                Телефон
+                <input class="checkout__forms-input" type="tel" placeholder="+38 (___) ____ __ __" required>
+              </label>
+            </form>
+            <form class="checkout__forms-form" action="#">
+              <label class="filter__label checkout__forms-register">
+                <input class="checkout__forms-input filter__input" type="checkbox" required>
+                <span class="filter__checkbox"></span>
+                <span class="checkout__forms-text">Зарегистрироваться</span>
+              </label>
+            </form>
+          </div>
+
+          <div class="checkout__forms-item checkout-delivery">
+            <h4 class="checkout__forms-title">
+              <span class="checkout__forms-span">2</span>
+              Доставка
+            </h4>
+            <form class="checkout__forms-form" action="#">
+              <label class="checkout__forms-label">Способ доставки</label>
+              <select class="checkout__forms-select ">
+                <option value="Нова Пошта">Нова Пошта</option>
+                <option value="Укр Пошта">Укр Пошта</option>
+              </select>
+            </form>
+            <form class="checkout__forms-form radio-form" action="#">
+              <label class="checkout__forms-label ">
+                <input class="checkout__forms-radio" type="radio" name="radio" value="Доставка на отделение">
+                <span class="checkout__forms-text">Доставка на отделение</span>
+              </label>
+              <label class="checkout__forms-label">
+                <input class="checkout__forms-radio" type="radio" name="radio" value="Адресная доставка">
+                <span class="checkout__forms-text"> Адресная доставка</span>
+              </label>
+            </form>
+            <form class="checkout__forms-form" action="#">
+              <label class="checkout__forms-label">
+                Город
+                <input class="checkout__forms-input" type="text" required>
+              </label>
+            </form>
+            <form class="checkout__forms-form" action="#">
+              <label class="checkout__forms-label">
+                Номер отделения / Адрес
+                <input class="checkout__forms-input" type="text" required>
+              </label>
+            </form>
+          </div>
+
+          <div class="checkout__forms-item checkout-payment">
+            <h4 class="checkout__forms-title">
+              <span class="checkout__forms-span">3</span>
+              Оплата
+            </h4>
+            <form class="checkout__forms-form radio-form" action="#">
+              <label class="checkout__forms-label">
+                <input class="checkout__forms-radio" type="radio" name="radio" value="Оплата картой онлайн">
+                <span class="checkout__forms-text">Оплата картой онлайн (LiqPay, Visa/Mastercard)</span>
+              </label>
+              <label class="checkout__forms-label">
+                <input class="checkout__forms-radio" type="radio" name="radio" value="Наложенный платеж">
+                <span class="checkout__forms-text"> Наложенный платеж</span>
+              </label>
+              <label class="checkout__forms-label">
+                <input class="checkout__forms-radio" type="radio" name="radio" value="Оплата на расчетный счет ">
+                <span class="checkout__forms-text"> Оплата на расчетный счет </span>
+              </label>
+            </form>
+            <a class="checkout__forms-comment" href="#">
+              Добавить комментарий к заказу
+            </a>
+          </div>
+          <button class="checkout__forms-confirm button" type="submit">
+            Подтвердить заказ
+          </button>
+          <div class="checkout__forms-agreement">
+            Нажимая на кнопку Подтвердить заказ, я принимаю условия
+            <a class="checkout__forms-contract" href="#">Политики конфиденциальности</a>
+            и
+            <a class="checkout__forms-contract" href="#">Договора оферты</a>
+          </div>
+        </div>
+
+        <div class="checkout__product">
+          <div class="cart__content checkout__content">
+            <div class="cart__title">
+              Ваш заказ
+            </div>
+            <div class="cart__box box-cart">
+              <div class="cart__product">
+                <button class="cart__product-close" type="submit">
+                  <img class="cart__close-img" src="img/close.png" alt="Закрыть" width="12" height="12">
+                </button>
+                <a class="cart__product-img" href="./product.html">
+                  <img class="cart__product-image" src="img/goods/15.jpg" alt="Костюм" width="75" height="113">
+                </a>
+                <div class="cart__product-descr">
+                  <a class="cart__product-name" href="./product.html">
+                    Женский медицинский костюм
+                  </a>
+                  <p class="cart__product-size">
+                    Размер S/M
+                  </p>
+                  <p class="cart__product-num">
+                    1 шт
+                  </p>
+                </div>
+                <div class="cart__product-price">
+                  <p class="cart__product-price price-old">
+                    5 100 грн
+                  </p>
+                  <p class="cart__product-price price-now">
+                    4 380 грн
+                  </p>
+                </div>
+              </div>
+              <div class="cart__product">
+                <button class="cart__product-close" type="submit">
+                  <img class="cart__close-img" src="img/close.png" alt="Закрыть" width="12" height="12">
+                </button>
+                <a class="cart__product-img" href="./product.html">
+                  <img class="cart__product-image" src="img/goods/4.jpg" alt="Кроксы" width="75" height="113">
+                </a>
+                <div class="cart__product-descr">
+                  <a class="cart__product-name" href="./product.html">
+                    Кроксы женские
+                  </a>
+                  <p class="cart__product-size">
+                    Размер S/M
+                  </p>
+                  <p class="cart__product-num">
+                    1 шт
+                  </p>
+                </div>
+                <div class="cart__product-price">
+                  <p class="cart__product-price price-now">
+                    1 200 грн
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="checkout__total">
+              <p class="checkout__total-text">
+                Товаров на сумму:
+              </p>
+              <p class="checkout__total-sum">
+                5 580 грн
+              </p>
+            </div>
+            <div class="checkout__haulage">
+              <p class="checkout__haulage-text">
+                Доставка:
+              </p>
+              <p class="checkout__haulage-sum">
+                0 грн
+              </p>
+            </div>
+            <div class="checkout__finish">
+              <p class="checkout__finish-text">
+                Итого к оплате:
+              </p>
+              <p class="checkout__finish-sum">
+                5 580 грн
+              </p>
+            </div>
+            <button class="checkout__promo button" type="button">
+              Применить промокод
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>

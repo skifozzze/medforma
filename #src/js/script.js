@@ -5,6 +5,8 @@
 @@include('./filter.js')
 @@include('./pagination.js')
 @@include('./accordion.js')
+@@include('./close.js')
+
 
 
 
