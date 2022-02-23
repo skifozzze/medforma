@@ -38,6 +38,26 @@
        margin-bottom: 15px;
     }
   }  
+
+  .banners {
+    &__item-img {
+      height: 400px;
+    }
+  }
+
+  .title {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: $md){
+  .banners {
+    &__item-img {
+      height: 300px;
+    }
+  }
+ 
 }
 
 @media (max-width: $sm) {
@@ -145,6 +165,11 @@
     &::before{
       display: none;
     }
+  }
+
+  .title {
+    font-size: 22px;
+    margin-bottom: 20px;
   }
 
   
