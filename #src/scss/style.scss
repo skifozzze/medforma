@@ -151,6 +151,10 @@
 
 .header-bottom {
 
+  &__btn {
+    display: none;
+  }
+
   &__inner {
     padding: 25px 15px;
     border-bottom: 1px solid $grey;

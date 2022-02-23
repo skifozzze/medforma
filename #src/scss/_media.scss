@@ -42,7 +42,7 @@
 
 @media (max-width: $sm) {
  .header {
-  position: absolute;
+  position: relative;
 
   .menu-info,
   .menu-site {
@@ -50,8 +50,12 @@
     top: 62px;
     right: 0;
     background-color: $headertop;
-    z-index: 5;
+    z-index: 10;
     transform: translateY(-200%);
+    transition: all .3s;
+    &--active {
+      transform: translateY(0);
+    }
   }
 
   .menu-info {
@@ -100,6 +104,47 @@
     }    
 
    }
+  }
+
+  .header-bottom {
+    &__btn {
+      display: flex;
+      justify-content: center;
+      width: 100%;      
+      padding: 15px;
+    }
+
+    &__menu {
+      background-color: $body;
+      position: absolute;    
+      flex-direction: column;   
+      width: 100%;  
+      text-align: center; 
+      z-index: 5;  
+      left: 0;  
+      transform: translateX(-200%);   
+      transition: all .3s;
+      &--active {
+        transform: translateX(0);
+      }
+      
+    }
+
+    &__item {           
+      margin: 15px;
+    }
+
+    &__link {
+      display: block;      
+    }
+  }
+
+  .item-clothing,
+  .item-footwear {
+    padding-right: 0;
+    &::before{
+      display: none;
+    }
   }
 
   

@@ -6,6 +6,7 @@
 @@include('./pagination.js')
 @@include('./accordion.js')
 @@include('./close.js')
+@@include('./headerBtn.js')
 
 
 
