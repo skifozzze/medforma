@@ -49,6 +49,25 @@
     font-size: 26px;
     margin-bottom: 30px;
   }
+
+  .catalog {
+
+    .items-big {
+      margin-bottom: 30px;
+    }
+ 
+    &__inner {
+      padding-bottom: 40px;
+    }
+  
+   &__item-photo {
+     height: auto;
+   }   
+
+   &__item-link {
+     font-size: 18px;
+   }      
+  }
 }
 
 @media (max-width: $md){
@@ -56,8 +75,7 @@
     &__item-img {
       height: 300px;
     }
-  }
- 
+  } 
 }
 
 @media (max-width: $sm) {
@@ -170,6 +188,42 @@
   .title {
     font-size: 22px;
     margin-bottom: 20px;
+  }
+
+  .catalog {
+
+    .items-big {
+      margin-bottom: 20px;
+    }
+
+    &__items {
+      flex-direction: column;
+      align-items: center;      
+    }
+
+    &__item-link {
+      font-size: 16px;
+    }
+
+    &__item-card {
+      margin-bottom: 20px;
+      align-items: center;
+    }
+
+    &__item-photo {
+      width: 270px;
+    }
+
+    &__item {      
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+
+    &__item-descr {
+      max-width: 270px;
+    }
+   
   }
 
   

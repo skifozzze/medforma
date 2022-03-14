@@ -46,8 +46,7 @@ $(function () {
           prevArrow: false,
           nextArrow: false
          }      
-      },  
-       
+      },         
     ]     
   });
 
