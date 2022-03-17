@@ -606,6 +606,10 @@
   &__btn {    
     margin-bottom: 38px;  
   }
+
+  &__filter-bnt {
+    display: none;
+  }
 }
 
 .jq-selectbox__select {  
@@ -864,6 +868,7 @@
 .filter-ruler {
   margin-bottom: 15px;
  .jq-selectbox__select {
+   
    width: 370px;
    height: 54px;
    border: 1px solid $grey;   
