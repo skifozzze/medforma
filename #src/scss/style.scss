@@ -243,6 +243,7 @@
   &__inner {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 70px;
   }
 
@@ -251,6 +252,7 @@
     &:not(:first-child){
       margin-top: 9px;
     }    
+   
   }
   
   &__box {
@@ -481,6 +483,7 @@
   &__box {
     padding-top: 65px;
     max-width: 315px;
+    margin-right: 30px;
   }  
 
   &__adress {
@@ -506,6 +509,7 @@
   }
 
   &__link {
+    display: inline-block;
     padding: 18px 39px;
     border: 1px solid $red;
     color: $red;
@@ -601,6 +605,10 @@
 
   &__btn {    
     margin-bottom: 38px;  
+  }
+
+  &__filter-bnt {
+    display: none;
   }
 }
 
@@ -860,6 +868,7 @@
 .filter-ruler {
   margin-bottom: 15px;
  .jq-selectbox__select {
+   
    width: 370px;
    height: 54px;
    border: 1px solid $grey;   

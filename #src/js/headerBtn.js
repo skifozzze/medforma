@@ -6,7 +6,7 @@ $(function () {
   })
 
    $('.header-bottom__btn, .header-bottom a').on('click', function () {    
-    $('.header-bottom__menu').toggleClass('header-bottom__menu--active')    
+   $('.header-bottom__menu').toggleClass('header-bottom__menu--active')    
    
   })
 })
